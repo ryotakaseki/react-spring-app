@@ -9,7 +9,7 @@ function Header() {
 
     const handleLogout = async () => {
         await logout();
-        navigate('/'); // ログアウト後にログインページへ遷移
+        navigate('/');
     };
 
     return (

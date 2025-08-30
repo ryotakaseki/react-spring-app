@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collections;
 import java.util.Map;
 
+import com.example.demo.constants.UrlConst;
+
 @RestController
 @RequestMapping("/api")
-// CORS設定: Reactアプリケーション(http://localhost:3000)からのリクエストを許可する
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = UrlConst.CORS_ORIGIN)
 public class LoginController {
 
     /**
@@ -24,7 +25,7 @@ public class LoginController {
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody Map<String, String> payload) {
         String code = payload.get("code");
-        // 固定のコード "1" と一致するかチェック
+        // 固定のコード "" と一致するかチェック
         if ("".equals(code)) {
             // 成功レスポンス
             return ResponseEntity.ok(Collections.singletonMap("status", "success"));

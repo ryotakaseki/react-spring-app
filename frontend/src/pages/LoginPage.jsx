@@ -9,7 +9,6 @@ function LoginPage() {
     const { setUser } = useUser();
 
     const handleLogin = () => {
-        // 1. ログインコードの検証
         fetch('http://localhost:8080/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -17,14 +16,11 @@ function LoginPage() {
         })
         .then(response => {
             if (!response.ok) throw new Error('Login failed');
-            // 2. ログイン成功後、ユーザー情報を取得
             return fetch('http://localhost:8080/api/user');
         })
         .then(response => response.json())
         .then(userData => {
-            // 3. 取得したユーザー情報をContextにセット
             setUser(userData);
-            // 4. メニューページへ遷移
             navigate('/menu');
         })
         .catch(error => {
@@ -40,7 +36,7 @@ function LoginPage() {
                 type="password"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
-                placeholder="コードを入力"
+                placeholder="ログインIDを入力してください"
             />
             <button onClick={handleLogin}>ログイン</button>
             {error && <p style={{ color: 'red' }}>{error}</p>}

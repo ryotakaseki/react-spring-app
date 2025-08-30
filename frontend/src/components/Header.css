@@ -2,45 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    height: 60px;
+    padding: 1rem;
     background-color: #282c34;
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.app-header a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
 }
 
 .app-header-logo a {
+    color: white;
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.app-header-nav a:hover {
-    text-decoration: underline;
+.app-header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
 }
 
-.app-header-user span {
-    margin-right: 15px;
+.app-header-user {
+    display: flex;
+    align-items: center;
 }
 
 .logout-button {
-    background-color: #dc3545;
-    color: white;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
     border: none;
-    padding: 5px 10px;
     border-radius: 4px;
+    background-color: #61dafb;
+    color: #282c34;
     cursor: pointer;
-}
-
-.logout-button:hover {
-    background-color: #c82333;
 }

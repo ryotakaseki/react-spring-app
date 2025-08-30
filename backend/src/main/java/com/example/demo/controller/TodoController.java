@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import com.example.demo.constants.UrlConst;
 
 /**
  * Controllerクラス (API層)
@@ -17,7 +18,6 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin(origins = "http://localhost:3000") // http://localhost:3000からの通信を許可
 public class TodoController {
 
     // TodoServiceを注入（DI: Dependency Injection）
