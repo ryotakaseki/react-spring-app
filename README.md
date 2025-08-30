@@ -28,7 +28,7 @@ cd backend
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 アプリケーションは `http://localhost:3000` で起動し、ブラウザで自動的に開きます。
