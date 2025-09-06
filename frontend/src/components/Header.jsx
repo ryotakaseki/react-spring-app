@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
-import './Header.css';
+import '../styles/Header.scss';
 
 function Header() {
     const { user, logout } = useUser();

@@ -6,7 +6,7 @@ import MenuPage from './pages/MenuPage.jsx';
 import TodoPage from './pages/TodoPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
 import Header from './components/Header.jsx';
-import './styles/App.css';
+import './styles/Layout.scss';
 
 const AppContent = () => {
     const location = useLocation();

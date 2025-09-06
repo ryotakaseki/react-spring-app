@@ -1,6 +1,6 @@
 import React from 'react';
 import { useUser } from '../context/UserContext';
-import './ProfilePage.css';
+import '../styles/ProfilePage.scss';
 
 function ProfilePage() {
     const { user } = useUser();

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
+import '../styles/LoginPage.scss';
 
 function LoginPage() {
     const [code, setCode] = useState('');
@@ -30,16 +31,19 @@ function LoginPage() {
     };
 
     return (
-        <div>
-            <h2>ログイン</h2>
-            <input
-                type="password"
-                value={code}
-                onChange={(e) => setCode(e.target.value)}
-                placeholder="ログインIDを入力してください"
-            />
-            <button onClick={handleLogin}>ログイン</button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+        <div className="login-page">
+            <div className="login-card">
+                <h2>ログイン</h2>
+                <input
+                    type="password"
+                    value={code}
+                    onChange={(e) => setCode(e.target.value)}
+                    placeholder="ログインIDを入力してください"
+                    className="input-field"
+                />
+                <button onClick={handleLogin} className="login-button">ログイン</button>
+                {error && <p className="error-message">{error}</p>}
+            </div>
         </div>
     );
 }
