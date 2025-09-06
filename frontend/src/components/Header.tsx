@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
 import '../styles/Header.scss';
 
-function Header() {
+const Header: React.FC = () => {
     const { user, logout } = useUser();
     const navigate = useNavigate();
 

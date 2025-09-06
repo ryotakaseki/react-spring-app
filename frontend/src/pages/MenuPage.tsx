@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MenuPage() {
+const MenuPage: React.FC = () => {
     return (
         <div>
             <h2>メニュー</h2>

@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { UserProvider, useUser } from './context/UserContext.jsx';
-import LoginPage from './pages/LoginPage.jsx';
-import MenuPage from './pages/MenuPage.jsx';
-import TodoPage from './pages/TodoPage.jsx';
-import ProfilePage from './pages/ProfilePage.jsx';
-import Header from './components/Header.jsx';
+import { UserProvider, useUser } from './context/UserContext';
+import LoginPage from './pages/LoginPage';
+import MenuPage from './pages/MenuPage';
+import TodoPage from './pages/TodoPage';
+import ProfilePage from './pages/ProfilePage';
+import Header from './components/Header';
 import './styles/Layout.scss';
 
-const AppContent = () => {
+const AppContent: React.FC = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const { user } = useUser();
@@ -35,7 +35,7 @@ const AppContent = () => {
     );
 };
 
-function App() {
+const App: React.FC = () => {
   return (
     <UserProvider>
         <Router>
@@ -43,6 +43,6 @@ function App() {
         </Router>
     </UserProvider>
   );
-}
+};
 
 export default App;

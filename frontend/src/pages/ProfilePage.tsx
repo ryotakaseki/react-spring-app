@@ -2,7 +2,7 @@ import React from 'react';
 import { useUser } from '../context/UserContext';
 import '../styles/ProfilePage.scss';
 
-function ProfilePage() {
+const ProfilePage: React.FC = () => {
     const { user } = useUser();
 
     if (!user) {

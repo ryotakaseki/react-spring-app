@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
 import '../styles/LoginPage.scss';
 
-function LoginPage() {
+const LoginPage: React.FC = () => {
     const [code, setCode] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
@@ -37,7 +37,7 @@ function LoginPage() {
                 <input
                     type="password"
                     value={code}
-                    onChange={(e) => setCode(e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCode(e.target.value)}
                     placeholder="ログインIDを入力してください"
                     className="input-field"
                 />

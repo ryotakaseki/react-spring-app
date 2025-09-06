@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TodoPage() {
+const TodoPage: React.FC = () => {
     return (
         <div>
             <h2>TODOリスト</h2>
