@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.example.todo.service;
 
-import com.example.demo.dto.UserDto;
+import com.example.todo.dto.UserDto;
 import org.springframework.stereotype.Service;
 
 @Service

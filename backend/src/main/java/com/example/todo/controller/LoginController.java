@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.todo.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collections;
 import java.util.Map;
 
-import com.example.demo.constants.UrlConst;
+import com.example.todo.constants.UrlConst;
 
 @RestController
 @RequestMapping("/api")
