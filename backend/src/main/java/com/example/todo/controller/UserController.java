@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.todo.controller;
 
-import com.example.demo.dto.UserDto;
-import com.example.demo.service.UserService;
+import com.example.todo.dto.UserDto;
+import com.example.todo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

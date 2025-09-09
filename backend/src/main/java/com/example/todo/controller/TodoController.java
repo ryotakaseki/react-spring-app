@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.todo.controller;
 
-import com.example.demo.dto.TodoDto;
-import com.example.demo.service.TodoService;
+import com.example.todo.dto.TodoDto;
+import com.example.todo.service.TodoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-import com.example.demo.constants.UrlConst;
+import com.example.todo.constants.UrlConst;
 
 /**
  * Controllerクラス (API層)
